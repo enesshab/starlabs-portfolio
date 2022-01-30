@@ -29,7 +29,7 @@ include 'admin/lib/Contact.php';
 
 <body>
     <header class="header">
-        <a class="logo" href="index.html">
+        <a class="logo" href="index.php">
             Portfo<span>lio</span>
         </a>
         <nav class="navbar">
