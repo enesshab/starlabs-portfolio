@@ -64,7 +64,7 @@ include 'include/header.php';
         <section class="main-hero edit-hero">
             <div class="edit-form">
                 <div class="edit-heading">
-                    <p>Edit footer links</p>
+                    <p>Edit my work projects</p>
                 </div>
                 
                 <form method="post" action="edit-work.php" enctype="multipart/form-data">

@@ -40,7 +40,7 @@ include 'include/header.php';
         <section class="main-hero edit-hero">
             <div class="edit-form">
                 <div class="edit-heading">
-                    <p>Edit main headings</p>
+                    <p>Edit footer links</p>
                 </div>
                 
                 <form method="post" action="edit-footer-links.php" >
