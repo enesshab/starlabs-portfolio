@@ -1,0 +1,1168 @@
+/* ---- GENERAL ---- */
+
+@import url("https://use.typekit.net/irl7ebm.css");
+* {
+    font-family: open-sans;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #1a1a1d;
+}
+
+section {
+    padding: 5rem 5rem;
+}
+
+
+/* ---- navigation ---- */
+
+header {
+    padding: 1% 5%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background-color: #1a1a1d;
+}
+
+.header .menu {
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    text-align: left;
+    display: none;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #950740;
+}
+
+.logo span {
+    color: white;
+    font-weight: bolder;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li a {
+    display: flex;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 10px;
+    padding: 5px 15px;
+    letter-spacing: 1px;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: #950740;
+    border-radius: 5px;
+    transition: all ease 0.3s;
+}
+
+
+/* ---- HOME HERO ---- */
+
+.main-hero {
+    padding: 0 5% 0% 5%;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.main-hero .background-img {
+    position: absolute;
+    z-index: -1;
+    width: 40vw;
+    bottom: 0;
+    right: 0;
+}
+
+.main-photo {
+    width: 350px;
+    overflow: hidden;
+    margin: 1rem;
+}
+
+.main-photo img {
+    width: 90%;
+    object-fit: contain;
+}
+
+.main-text {
+    background-color: none;
+    padding-top: 5%;
+    width: 35%;
+    margin: 1rem;
+}
+
+.main-text h2 {
+    font-size: 2rem;
+    color: white;
+}
+
+.main-text h1 {
+    font-size: 3.5rem;
+    color: #950740;
+    margin-bottom: 2rem;
+    line-height: 50px;
+}
+
+.main-text p {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    line-height: 30px;
+    color: rgb(230, 230, 230);
+    margin-bottom: 2rem;
+}
+
+.main-text p span {
+    color: #950740;
+    font-weight: bold;
+}
+
+.button {
+    padding: 7px 40px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    color: #950740;
+    height: 50px;
+    border: 1px solid #950740;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #950740;
+    color: white;
+    transition: all ease 0.4s;
+}
+
+
+/* ---- ABOUT ME ---- */
+
+.about-me {
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding-bottom: 20rem;
+}
+
+.about-me-text {
+    padding: 3rem 0rem;
+    color: #1a1a1d;
+    width: 70vw;
+    text-align: center;
+}
+
+.about-me-text h2 {
+    font-size: 2rem;
+}
+
+.about-me-text h1 {
+    font-size: 2.5rem;
+    color: #950740;
+    line-height: 50px;
+}
+
+.about-me-text p {
+    font-size: 1.1rem;
+    margin-top: 2.5rem;
+    line-height: 25px;
+}
+
+.about-me-skills {
+    margin-top: -18rem;
+    border-radius: 3px;
+    color: #1a1a1d;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+
+.about-me-skills .about-card i {
+    color: #950740;
+    font-size: 2rem;
+}
+
+.about-me-skills .about-card {
+    padding: 4rem 3rem;
+    padding-bottom: 6rem;
+    background-color: rgb(250, 250, 250);
+    width: 400px;
+    text-align: center;
+    border: 1px solid #00000023;
+    border-right: 0;
+}
+
+.about-me-skills>div:first-child {
+    border-radius: 10px 0 0 10px;
+}
+
+.about-me-skills>div:last-child {
+    border-radius: 0 10px 10px 0px;
+    border: 1px solid #00000023;
+}
+
+.about-card .about-me-card-title {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.about-card .about-me-card-desc {
+    font-size: 1rem;
+    line-height: 25px;
+    margin-bottom: 3rem;
+}
+
+.about-card .about-me-tools-title {
+    font-size: 1rem;
+    color: #950740;
+    line-height: 25px;
+    margin-bottom: .8rem;
+}
+
+.about-me-skills .about-card:hover {
+    background-color: #950740;
+    color: white;
+    transition: all ease 0.3s;
+}
+
+.about-card:hover h3 {
+    color: white;
+    transition: all ease 0.3;
+}
+
+.about-card:hover i {
+    color: white;
+    transition: all ease 1s;
+}
+
+
+/* ------------ MY WORK ------------ */
+
+.my-work {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 7rem;
+}
+
+.my-work .my-work-text {
+    width: 80vw;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.my-work .my-work-text h1 {
+    font-size: 2.5rem;
+    color: #950740;
+    line-height: 50px;
+}
+
+.my-work .my-work-text p {
+    color: white;
+    font-size: 1.1rem;
+    letter-spacing: 0.8px;
+    margin-top: 1rem;
+    line-height: 25px;
+}
+
+.my-work .my-work-text p a {
+    color: #950740;
+}
+
+.my-work .my-work-text p a:hover {
+    border-bottom: 1px solid #950740;
+}
+
+.portfolio-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.portfolio-container>.edit-btn {
+    display: flex;
+    align-self: center;
+    justify-self: cener;
+}
+
+.portfolio-container .work-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5rem;
+}
+
+.work-container .edit-btn {
+    margin: 0;
+}
+
+.portfolio-container .flip-box {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 300px;
+    height: 200px;
+}
+
+.portfolio-container .flip-box-front {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.portfolio-container .flip-box-front img {
+    object-fit: contain;
+    width: auto;
+    height: 100%;
+}
+
+.portfolio-container .flip-box-inner {
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-box-front .front-title {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 3rem;
+    background-color: #1a1a1de0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.front-title p {
+    color: white;
+    font-size: 1rem;
+}
+
+.flip-box-front,
+.flip-box-back {
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.576);
+    background: linear-gradient(135deg, #ffffff 30%, #d1d1d1 100%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.portfolio-container .flip-box-back {
+    padding: 2rem;
+    text-align: center;
+    color: #080e0f;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.flip-box-back h2 {
+    color: #1a1a1d;
+    font-size: 1.4rem;
+}
+
+.flip-box-back p {
+    color: #950740;
+    font-size: 1rem;
+    letter-spacing: 0.8px;
+    margin-top: 1rem;
+}
+
+
+/* ------- CLIENT ------- */
+
+.client {
+    padding-top: 7rem;
+    margin-bottom: -2px;
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.client .client-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.client .client-heading h1 {
+    font-size: 2.5rem;
+    color: #950740;
+    line-height: 50px;
+}
+
+.client .client-heading p {
+    color: #1a1a1d;
+    font-size: 1.2rem;
+    letter-spacing: 0.8px;
+    margin-top: 1rem;
+    line-height: 25px;
+}
+
+.client-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 5rem 3rem;
+}
+
+.client-container .client-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem;
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.309);
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.145);
+}
+
+.client-card .client-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.client-card .client-img img {
+    width: auto;
+    height: 100%;
+}
+
+.client-card .client-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.client-text h2 {
+    color: #1a1a1d;
+    margin: 1rem 0rem;
+    font-size: 1.2rem;
+}
+
+.client-text p {
+    width: 80%;
+    color: #222222;
+    line-height: 25px;
+}
+
+
+/* -------- CONTACT ------- */
+
+.contact {
+    background-color: rgb(250, 250, 250);
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact-heading h1 {
+    font-size: 2.3rem;
+    color: #950740;
+    line-height: 50px;
+}
+
+.contact-heading p {
+    color: #1a1a1d;
+    font-size: 1.2rem;
+    letter-spacing: 0.8px;
+    margin-top: 0.2rem;
+    line-height: 25px;
+}
+
+.contact-form {
+    padding: 4rem 4rem 4rem 4rem;
+    width: 60%;
+    margin-bottom: -10rem;
+    border-radius: 10px;
+    background-color: rgb(250, 250, 250);
+    box-shadow: 0px 0px 60px #1a1a1d1c;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form form .input-group {
+    width: 90%;
+    margin-bottom: 1rem;
+}
+
+.contact-form form .input-group .input-field {
+    width: 100%;
+    font-size: 0.9rem;
+    height: 2.8rem;
+    padding: 1rem;
+    font-style: 1rem;
+    border: 1px solid rgba(48, 48, 48, 0.508);
+    border-radius: 5px;
+}
+
+.contact-form form .input-field:focus {
+    background-color: rgb(245, 245, 245);
+    border: 1px solid #950740;
+    outline: none;
+}
+
+.contact-form form .input-message {
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 1rem;
+    font-style: 1rem;
+    border: 1px solid rgba(48, 48, 48, 0.508);
+    border-radius: 5px;
+    resize: vertical;
+}
+
+.contact-form form .input-message:focus {
+    background-color: rgb(245, 245, 245);
+    border: 1px solid #950740;
+    outline: none;
+}
+
+.contact-form form .submit-btn {
+    background: none;
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    color: #950740;
+    border: 1px solid #950740;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form form .submit-btn:hover {
+    background-color: #950740;
+    color: white;
+    transition: all ease 0.3s;
+}
+
+
+/* -------LOGIN------- */
+
+.login-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form {
+    padding: 2rem 3rem 3rem 3rem;
+    width: 400px;
+    border-radius: 10px;
+    background-color: rgb(250, 250, 250);
+    box-shadow: 0px 0px 60px #1a1a1d1c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-heading {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.login-heading p {
+    color: #1a1a1d;
+    font-size: 1.4rem;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+    margin-top: 0.2rem;
+    line-height: 25px;
+}
+
+.login-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+.login-form form .input-group {
+    width: 100%;
+}
+
+.login-form form .input-group .input-field {
+    width: 100%;
+    font-size: 0.9rem;
+    height: 2.8rem;
+    padding: 1rem;
+    font-style: 1rem;
+    border: 1px solid rgba(48, 48, 48, 0.508);
+    border-radius: 5px;
+}
+
+.login-form form input[type=password] {
+    margin-top: 1rem;
+}
+
+.login-form form input[type=submit] {
+    margin-top: 1rem;
+}
+
+.login-form form .input-field:focus {
+    background-color: rgb(245, 245, 245);
+    border: 1px solid #950740;
+    outline: none;
+}
+
+.login-form form .submit-btn {
+    background: none;
+    width: 100%;
+    padding: 10px;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    color: #950740;
+    border: 1px solid #950740;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+.login-form form .submit-btn:hover {
+    background-color: #950740;
+    color: white;
+    transition: all ease 0.3s;
+}
+
+
+/* ----- FOOTER ---- */
+
+.footer-section {
+    padding-bottom: 1rem;
+    padding-top: 14rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-section h1 {
+    font-size: 1.8rem;
+    color: white;
+}
+
+.footer-section h1 span {
+    font-size: 1.8rem;
+    color: #950740;
+}
+
+.footer-section .footer-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.footer-icons a {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.4rem;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    color: #950740;
+    border: 1px solid #950740;
+    margin: 0.5rem;
+}
+
+.footer-icons a:hover {
+    background-color: #950740;
+    color: white;
+    transition: all ease 0.2s;
+}
+
+.footer-section p {
+    color: white;
+    letter-spacing: 1px;
+    font-size: 13px;
+    font-weight: lighter;
+}
+
+
+/* -----ADMIN SECTION CSS------- */
+
+.alert-wrong {
+    width: 100%;
+    padding: 5px 0 5px 0;
+    color: rgb(255, 0, 0);
+}
+
+.alert-success {
+    width: 90%;
+    border-radius: 5px;
+    padding: 1rem;
+    background-color: rgb(59, 255, 131);
+    border: 1px solid rgb(0, 126, 46);
+    color: rgb(0, 0, 0);
+    margin-bottom: 1rem;
+}
+
+.alert-fail {
+    width: 90%;
+    border-radius: 5px;
+    padding: 1rem;
+    background-color: rgba(255, 59, 59, 0.831);
+    border: 1px solid rgb(101, 0, 0);
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.logout-btn {
+    padding: 6px 20px;
+    background-color: #950740;
+    color: white;
+    border-radius: 5px;
+}
+
+.logout-btn:hover {
+    background-color: #6f002c;
+    color: white !important;
+    transition: all ease 0.3s;
+}
+
+.edit-btn {
+    margin: 2rem;
+    font-size: 1.5rem;
+    color: #950740;
+}
+
+.edit-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.edit-form {
+    padding: 2rem 3rem 3rem 3rem;
+    width: 600px;
+    border-radius: 10px;
+    background-color: rgb(250, 250, 250);
+    box-shadow: 0px 0px 60px #1a1a1d1c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.edit-heading {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.edit-heading p {
+    color: #1a1a1d;
+    font-size: 1.4rem;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+    margin-top: 0.2rem;
+    line-height: 25px;
+}
+
+.edit-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.edit-form form .input-group {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.edit-form form .input-group .input-field {
+    width: 100%;
+    font-size: 0.9rem;
+    height: 2.8rem;
+    padding: 1rem;
+    border: 1px solid rgba(48, 48, 48, 0.508);
+    border-radius: 5px;
+}
+
+.edit-form form .input-field:focus {
+    background-color: rgb(245, 245, 245);
+    border: 1px solid #950740;
+    outline: none;
+}
+
+.edit-form form .input-message {
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 1rem;
+    font-style: 1rem;
+    border: 1px solid rgba(48, 48, 48, 0.508);
+    border-radius: 5px;
+    resize: vertical;
+}
+
+.edit-form form .input-message:focus {
+    background-color: rgb(245, 245, 245);
+    border: 1px solid #950740;
+    outline: none;
+}
+
+.edit-form form .submit-btn {
+    background: none;
+    padding: 10px;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    color: #950740;
+    border: 1px solid #950740;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+.edit-form form .submit-btn:hover {
+    background-color: #950740;
+    color: white;
+    transition: all ease 0.3s;
+}
+
+.edit-form form .cancel-btn {
+    background: none;
+    padding: 10px;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    color: #008552;
+    border: 1px solid #008552;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+.edit-form form .cancel-btn:hover {
+    background-color: #008552;
+    color: white;
+    transition: all ease 0.3s;
+}
+
+.edit-form form .delete-btn {
+    background: none;
+    padding: 10px;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    color: white;
+    border: 1px solid rgb(137, 0, 0);
+    background-color: rgb(137, 0, 0);
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+.edit-form form .delete-btn:hover {
+    background-color: rgb(125, 0, 0);
+    border: 1px solid rgb(125, 0, 0);
+    color: white;
+    transition: all ease 0.3s;
+}
+
+.input-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-card .edit-btn,
+.about-me-text .edit-btn {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem !important;
+}
+
+.footer-icons .edit-btn {
+    border: none;
+    color: white;
+}
+
+.footer-icons .edit-btn:hover {
+    border: none;
+    background: none;
+    color: #950740;
+}
+
+.messages-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.messages-table {
+    margin-top: 8vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.messages-heading {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.messages-heading p {
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+    margin-top: 0.2rem;
+    line-height: 25px;
+}
+
+.messages-table table {
+    background-color: rgb(250, 250, 250);
+    box-shadow: 0px 0px 60px #1a1a1d1c;
+    width: 70vw;
+    min-width: 100%;
+    font-size: 0.9rem;
+    border-bottom: 5px solid #950740;
+    border-collapse: collapse;
+    overflow: hidden;
+}
+
+.messages-table table thead tr {
+    background-color: #950740;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+}
+
+.messages-table table th,
+.messages-table table td {
+    padding: 0.8rem 1rem;
+    white-space: pre-line;
+    word-wrap: break-word;
+}
+
+.messages-table table tbody tr {
+    border-bottom: 1px solid #dddd;
+}
+
+.messages-table table tbody tr td a {
+    font-size: 1.2rem;
+    color: #950740;
+}
+
+.messages-table table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+
+/* ---- RESPONSIVE ---- */
+
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 90%;
+    }
+    .header {
+        height: 7%;
+    }
+    nav {
+        width: 100vw;
+    }
+    .header .menu {
+        display: block;
+        font-size: 1.4rem;
+    }
+    .header .navbar {
+        height: 100vh;
+        position: fixed;
+        top: 3rem;
+        left: 0;
+        right: 0;
+        background-color: #1a1a1d;
+        transform: translateX(100%);
+    }
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .header .navbar.show {
+        transform: translateX(0);
+    }
+    .header .navbar ul li a {
+        color: white;
+        margin: 0;
+        font-size: 1.2rem;
+        margin: 1rem 0;
+    }
+    .header .navbar ul li a:hover {
+        color: #950740;
+    }
+    .main-hero .background-img {
+        display: none;
+    }
+    section {
+        padding: 10% 10%;
+    }
+    .main-hero {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 5rem;
+    }
+    .main-hero .main-photo {
+        width: 200px;
+        margin-bottom: 2rem;
+    }
+    .main-hero .main-text {
+        background: none;
+        padding: 0;
+        margin: 0;
+        width: 90%;
+    }
+    .about-me-skills {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-me-skills .about-card {
+        width: 100%;
+    }
+    .about-me-skills>div:first-child {
+        border-radius: 10px 10px 0 0;
+        border: 1px solid #00000023;
+    }
+    .about-me-skills>div:last-child {
+        border-radius: 0 0 10px 10px;
+        border: 1px solid #00000023;
+    }
+    .portfolio-container .flip-box {
+        margin: 10px;
+        width: 80vw;
+        height: 55vw;
+    }
+    .client-container .client-card {
+        width: 80vw;
+    }
+    .contact-form {
+        padding: 4rem 1rem 4rem 1rem;
+    }
+    .contact-heading {
+        padding: 0;
+        width: 100%;
+    }
+    .contact-form {
+        width: 90vw;
+    }
+    .login-form {
+        width: 80vw;
+    }
+    .edit-form {
+        width: 80vw;
+    }
+    .contact-form form .input-field,
+    .contact-form form .input-message,
+    .contact-form form .submit-btn {
+        width: 75vw;
+    }
+    /* ----- admin responsive----- */
+    .main-hero .edit-btn {
+        display: flex;
+        align-self: center;
+        margin-top: 3rem;
+    }
+}
+
+@media only screen and (-webkit-device-pixel-ratio: 3) {
+    .contact-form form .submit-btn {
+        background: none;
+        margin: 1rem;
+        width: 60vw;
+        padding: 10px 20px;
+        font-size: 0.9rem;
+        letter-spacing: 1px;
+        color: #950740;
+        border: 1px solid #950740;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .contact-form form .submit-btn:hover {
+        background-color: #950740;
+        color: white;
+        transition: all ease 0.3s;
+        margin: 1rem;
+        width: 60vw;
+        padding: 10px 20px;
+        font-size: 0.9rem;
+        letter-spacing: 1px;
+        border: 1px solid #950740;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}
